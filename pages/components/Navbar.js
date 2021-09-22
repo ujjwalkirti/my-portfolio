@@ -1,19 +1,28 @@
-
+import {TwitterOutlined, FacebookFilled, LinkedinFilled } from "@ant-design/icons"
 
 function Navbar() {
   const navoptions = ["Facebook", "Twitter", "Linkedin"];
   return (
     <div className={`flex w-screen absolute text-white justify-end`}>
-      <div className="flex w-2/5 justify-between p-2 font-medium  mr-2 text-2xl">
-        <p className="p-2 ease-in-out duration-200 transition-all cursor-pointer hover:rounded-2xl hover:text-blue-300 hover:bg-white">
-          <a>Linkedin</a>
-        </p>
-        <p className="p-2 ease-in-out duration-200 transition-all cursor-pointer hover:rounded-2xl hover:text-blue-300 hover:bg-white">
-          <a>Twitter</a>
-        </p>
-        <p className="p-2 ease-in-out duration-200 transition-all cursor-pointer hover:rounded-2xl hover:text-blue-300 hover:bg-white">
-          <a>facebook</a>
-        </p>
+      <div className="flex w-2/5 justify-end p-2 font-medium  mr-2 text-2xl">
+        <a
+          href="https://www.linkedin.com/in/ujjwal-kirti-38936818a/"
+          className="ease-in-out duration-200 transition-all cursor-pointer mx-3"
+        >
+          <LinkedinFilled />
+        </a>
+        <a
+          href="https://twitter.com/kirti_ujjwal"
+          className="ease-in-out duration-200 transition-all cursor-pointer mx-3"
+        >
+          <TwitterOutlined />
+        </a>
+        <a
+          href="https://www.facebook.com/ujjwal.kirti.39/"
+          className="ease-in-out duration-200 transition-all cursor-pointer mx-3"
+        >
+          <FacebookFilled />
+        </a>
       </div>
     </div>
   );
