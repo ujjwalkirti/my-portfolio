@@ -16,14 +16,14 @@ function Page_1() {
     checkForScrolling();
   }, []);
   return (
-    <div className="h-screen bg-gray-600 w-screen flex flex-col items-center justify-center ">
+    <div className="h-screen bg-gray-600 w-full flex flex-col items-center justify-center ">
       <span className="flex divide-white">
         {" "}
         <h1 className="font-bold text-white text-9xl w-1/2 text-right mr-4">
           I am Ujjwal Kirti
         </h1>
-        <h1 className="font-medium text-8xl w-1/2 text-gray-600 bg-white text-left border-4 pl-4">
-          , and I am a web developer.
+        <h1 className="font-medium text-7xl w-1/2 text-gray-600 bg-white text-left border-4 pl-4">
+          , and I am a web developer who specialises in Blockchain.
         </h1>
       </span>
       {hasNotScrolled && (
