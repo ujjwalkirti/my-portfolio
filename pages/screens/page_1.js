@@ -22,9 +22,8 @@ function Page_1() {
         <h1 className="font-bold text-white text-9xl w-1/2 text-right mr-4">
           I am Ujjwal Kirti
         </h1>
-        <h1 className="font-medium text-7xl w-1/2 text-gray-600 bg-white text-left border-4 pl-4">
-          , and I am a frontend developer who specialises in making beautiful
-          and reusable UI.
+        <h1 className="font-medium text-7xl w-1/2 text-gray-600 bg-white text-left border-4 pl-4 flex items-center">
+          , and I am a frontend developer. 👨‍💻
         </h1>
       </span>
       {hasNotScrolled && (
