@@ -1,4 +1,5 @@
 import { DownCircleFilled } from "@ant-design/icons";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 
@@ -9,7 +10,7 @@ function Page_1() {
   const [blink, setBlink] = useState(true);
   const [index, setIndex] = useState(0);
 
-  const beginnerText = [" frontend Engineer.", " UI developer."];
+  const beginnerText = ["a frontend Engineer.", "an UI developer."];
 
   function checkForScrolling() {
     window.addEventListener("scroll", function () {
@@ -58,19 +59,27 @@ function Page_1() {
   }, [blink]);
 
   return (
-    <div className="h-screen bg-gray-600 bg-gradient-to-br from-yellow-300 via-yellow-600 to-red-400 w-full flex flex-col items-center justify-center ">
-      <span className="flex divide-white z-40">
+    <div className="h-screen bg-gray-600 bg-gradient-to-br from-yellow-300 via-yellow-600 to-red-400 w-full flex flex-col">
+      <div>
+        <motion.img
+          src="/me.jpg"
+          className="h-40 w-40 rounded-full  my-16"
+          animate={{ rotate: 360, x: 700 }}
+          transition={{ duration: 4 }}
+        />
+      </div>
+      <span className="flex z-40">
         {" "}
         <h1 className="font-bold text-white text-9xl w-1/2 text-right mr-4">
           I am Ujjwal Kirti
         </h1>
-        <h1 className="font-medium text-7xl w-1/2 bg-white text-left border-4 pl-4 flex items-center">
-          , and I am a{" "}
+        <h1 className="font-medium text-7xl w-1/2 bg-white text-left pl-4 flex items-center text-yellow-600">
+          , and I am{" "}
           {`${beginnerText[index].substring(0, subIndex)}${blink ? "|" : ""}`}
         </h1>
       </span>
       {hasNotScrolled && (
-        <div className="absolute transition-all animate-bounce bottom-0 text-white text-2xl font-medium">
+        <div className="absolute transition-all animate-bounce bottom-0 text-white text-2xl font-medium flex justify-center items-center w-full">
           <DownCircleFilled className="m-3" />
           Scroll down to know more
         </div>

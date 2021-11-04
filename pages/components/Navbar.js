@@ -1,7 +1,7 @@
 import {
   TwitterOutlined,
-  FacebookFilled,
   LinkedinFilled,
+  MailOutlined,
 } from "@ant-design/icons";
 import { motion } from "framer-motion";
 
@@ -11,7 +11,6 @@ function Navbar() {
     <motion.div className={`flex w-screen absolute text-white justify-end`}>
       <div className="flex w-2/5 justify-end p-2 font-medium  mr-2 text-2xl">
         <motion.a
-          
           href="https://www.linkedin.com/in/ujjwal-kirti-38936818a/"
           className="ease-in-out duration-200 transition-all cursor-pointer mx-3"
         >
@@ -24,10 +23,10 @@ function Navbar() {
           <TwitterOutlined />
         </a>
         <a
-          href="https://www.facebook.com/ujjwal.kirti.39/"
+          href="mailto:kirti.chargers@gmail.com"
           className="ease-in-out duration-200 transition-all cursor-pointer mx-3"
         >
-          <FacebookFilled />
+          <MailOutlined />
         </a>
       </div>
     </motion.div>
