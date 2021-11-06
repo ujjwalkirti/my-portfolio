@@ -1,7 +1,6 @@
 import { DownCircleFilled } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Particles from "react-tsparticles";
 
 function Page_1() {
   const [hasNotScrolled, setHasNotScrolled] = useState(true);
@@ -16,8 +15,8 @@ function Page_1() {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 300) {
         setHasNotScrolled(false);
-        console.log(window.scrollY);
-        // window.removeEventListener("scroll", null);
+        // console.log(window.scrollY);
+        window.removeEventListener("scroll", null);
       }
     });
   }
@@ -59,7 +58,7 @@ function Page_1() {
   }, [blink]);
 
   return (
-    <div className="h-screen bg-gray-600 bg-gradient-to-br from-yellow-300 via-yellow-600 to-red-400 w-full flex flex-col">
+    <div className="h-screen bg-gray-600 bg-gradient-to-br from-yellow-300 via-yellow-600 to-red-400 w-full flex  flex-col">
       <div>
         <motion.img
           src="/me.jpg"
@@ -68,9 +67,9 @@ function Page_1() {
           transition={{ duration: 4 }}
         />
       </div>
-      <span className="flex z-40">
+      <span className="flex z-40 flex-col lg:flex-row w-screen">
         {" "}
-        <h1 className="font-bold text-white text-9xl w-1/2 text-right mr-4">
+        <h1 className="font-bold text-white sm:text-5xl lg:text-7xl xl:text-9xl w-1/2 text-right pr-4">
           I am Ujjwal Kirti
         </h1>
         <h1 className="font-medium text-7xl w-1/2 bg-white text-left pl-4 flex items-center text-yellow-600">

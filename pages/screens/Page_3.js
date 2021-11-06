@@ -23,18 +23,18 @@ function Page_3() {
               className="mx-auto cursor-pointer p-2 w-auto bg-white bg-opacity-70 font-bold rounded-lg text-purple-800 mb-3"
               href="https://nifty-volhard-fa38be.netlify.app/"
             >
-              Check it Out!
+              Check it Out! ✨
             </motion.a>
             <motion.a
               whileTap={{ scale: 0.9 }}
               className="mx-auto cursor-pointer p-2 w-auto bg-white bg-opacity-70 font-bold rounded-lg text-purple-800"
               href="https://github.com/ujjwalkirti/pomodoro-timer-harry_potter-theme"
             >
-              Github code!
+              Github code! 📚
             </motion.a>
             <div className="mx-4">
               <p className="text-2xl font-semibold">
-                Technology and languages used:
+                Made with: 
               </p>
               <div className="ml-3 flex bg-white bg-opacity-40 w-4/5 justify-evenly rounded-lg mt-2 p-3">
                 <img
@@ -79,18 +79,18 @@ function Page_3() {
               className="mx-auto cursor-pointer p-2 w-auto bg-white bg-opacity-70 font-bold rounded-lg text-purple-800 mb-3"
               href="https://infallible-shockley-9996db.netlify.app/"
             >
-              Check it Out!
+              Check it Out! ✨
             </motion.a>
             <motion.a
               whileTap={{ scale: 0.9 }}
               className="mx-auto cursor-pointer p-2 w-auto bg-white bg-opacity-70 font-bold rounded-lg text-purple-800"
               href="https://github.com/ujjwalkirti/Furniture-Shop-landing-Page/tree/master"
             >
-              Github code!
+              Github code! 📚
             </motion.a>
             <div className="mx-4">
               <p className="text-2xl font-semibold">
-                Technology and languages used:
+                Made with: 
               </p>
               <div className="ml-3 flex bg-white bg-opacity-40 w-2/5 justify-evenly rounded-lg mt-2 p-3">
                 <img
@@ -119,17 +119,17 @@ function Page_3() {
                 className="mx-auto cursor-pointer p-2 w-auto bg-white bg-opacity-70 font-bold rounded-lg text-purple-800 mb-3"
                 href="https://confident-leavitt-de982c.netlify.app/"
               >
-                Check it Out!
+                Check it Out! ✨
               </a>
               <a
                 className="mx-auto cursor-pointer p-2 w-auto bg-white bg-opacity-70 font-bold rounded-lg text-purple-800 mb-3"
                 href="https://github.com/ujjwalkirti/Pricing-Component/tree/master"
               >
-                Github code!
+                Github code! 📚
               </a>
               <div className="mx-4">
                 <p className="text-2xl font-semibold">
-                  Technology and languages used:
+                  Made with: 
                 </p>
                 <div className="ml-3 flex bg-white bg-opacity-40 w-2/5 justify-evenly rounded-lg mt-2 p-3">
                   <img
