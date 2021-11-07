@@ -41,6 +41,7 @@ function Contact() {
             setMessage(event.target.value);
           }}
           value={message}
+          placeholder="Leave your message here"
         >
           Write a message for me!
         </textarea>

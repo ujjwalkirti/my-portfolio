@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 
 function Page_3() {
   return (
-    <div className="h-auto w-screen flex flex-col bg-black">
-      <h1 className="font-semibold text-7xl text-white m-4 text-center">
+    <div className="h-auto w-screen flex flex-col bg-gradient-to-br from-blue-300 via-yellow-600 to-red-600">
+      <h1 className="font-semibold text-7xl text-white m-4 text-center w-full">
         My Projects 💻
       </h1>
       <ol>
         {/* Pomodoro timer projet */}
         <li className="mx-4">
-          <div className="text-white m-5 flex flex-col bg-purple-500 bg-opacity-40 rounded-lg w-2/3 mx-auto p-4">
+          <div className="text-white m-5 flex flex-col bg-purple-500 bg-opacity-70 shadow-xl rounded-lg w-1/3 mx-auto p-4">
             <h3 className="text-3xl font-medium">Pomodoro Timer ⏳</h3>
             <p className="">(Based on Harry Potter theme)</p>
 
@@ -34,7 +34,7 @@ function Page_3() {
             </motion.a>
             <div className="mx-4">
               <p className="text-2xl font-semibold">Made with:</p>
-              <div className="ml-3 flex bg-white bg-opacity-40 w-4/5 justify-evenly rounded-lg mt-2 p-3">
+              <div className="ml-3 flex bg-white bg-opacity-40 w-auto justify-evenly rounded-lg mt-2 p-3">
                 <img
                   src="/html-css-js.png"
                   className="h-16 mr-4 bg-white p-3 shadow-xl rounded-lg"
@@ -58,7 +58,7 @@ function Page_3() {
 
         {/* Landing page design project */}
         <li className="mx-4">
-          <div className="text-white m-5 flex flex-col bg-purple-500 bg-opacity-40 rounded-lg w-2/3 mx-auto p-4">
+          <div className="text-white m-5 flex flex-col bg-purple-500 shadow-xl bg-opacity-70 rounded-lg w-1/3 mx-auto p-4">
             <h3 className="text-3xl font-medium">Landing Page Design 📰</h3>
             <p className="text-center mt-4 text-3xl font-semibold shadow-lg w-auto mx-auto border px-3 py-1 rounded-lg">
               Full Screen view
@@ -88,7 +88,7 @@ function Page_3() {
             </motion.a>
             <div className="mx-4">
               <p className="text-2xl font-semibold">Made with:</p>
-              <div className="ml-3 flex bg-white bg-opacity-40 w-2/5 justify-evenly rounded-lg mt-2 p-3">
+              <div className="ml-3 flex bg-white bg-opacity-40 w-auto justify-evenly rounded-lg mt-2 p-3">
                 <img
                   src="/html-css-js.png"
                   className="h-16 mr-4 bg-white p-3 shadow-xl rounded-lg"
@@ -104,7 +104,7 @@ function Page_3() {
 
         {/* pricing component design project */}
         <li className="mx-4">
-          <div className="text-white m-5 flex flex-col bg-purple-500 bg-opacity-40 rounded-lg w-2/3 mx-auto p-4">
+          <div className="text-white m-5 flex flex-col bg-purple-500 bg-opacity-70 shadow-xl rounded-lg w-1/3 mx-auto p-4">
             <h3 className="text-3xl font-medium">Pricing Component 🧩</h3>
             <img
               className="my-3 object-contain mx-auto rounded-lg shadow-lg"
@@ -125,7 +125,7 @@ function Page_3() {
               </a>
               <div className="mx-4">
                 <p className="text-2xl font-semibold">Made with:</p>
-                <div className="ml-3 flex bg-white bg-opacity-40 w-2/5 justify-evenly rounded-lg mt-2 p-3">
+                <div className="ml-3 flex bg-white bg-opacity-40 w-auto justify-evenly rounded-lg mt-2 p-3">
                   <img
                     src="/html-css-js.png"
                     className="h-16 mr-4 bg-white p-3 shadow-xl rounded-lg"
