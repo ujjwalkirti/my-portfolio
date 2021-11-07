@@ -1,6 +1,7 @@
 import { DownCircleFilled } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import background from "../../public/main.jpg";
 
 function Page_1() {
   const [hasNotScrolled, setHasNotScrolled] = useState(true);

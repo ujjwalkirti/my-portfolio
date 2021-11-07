@@ -33,9 +33,7 @@ function Page_3() {
               Github code! 📚
             </motion.a>
             <div className="mx-4">
-              <p className="text-2xl font-semibold">
-                Made with: 
-              </p>
+              <p className="text-2xl font-semibold">Made with:</p>
               <div className="ml-3 flex bg-white bg-opacity-40 w-4/5 justify-evenly rounded-lg mt-2 p-3">
                 <img
                   src="/html-css-js.png"
@@ -89,9 +87,7 @@ function Page_3() {
               Github code! 📚
             </motion.a>
             <div className="mx-4">
-              <p className="text-2xl font-semibold">
-                Made with: 
-              </p>
+              <p className="text-2xl font-semibold">Made with:</p>
               <div className="ml-3 flex bg-white bg-opacity-40 w-2/5 justify-evenly rounded-lg mt-2 p-3">
                 <img
                   src="/html-css-js.png"
@@ -128,9 +124,7 @@ function Page_3() {
                 Github code! 📚
               </a>
               <div className="mx-4">
-                <p className="text-2xl font-semibold">
-                  Made with: 
-                </p>
+                <p className="text-2xl font-semibold">Made with:</p>
                 <div className="ml-3 flex bg-white bg-opacity-40 w-2/5 justify-evenly rounded-lg mt-2 p-3">
                   <img
                     src="/html-css-js.png"
