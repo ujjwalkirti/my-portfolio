@@ -61,8 +61,7 @@ const projects = [
     byLine: "",
     githubCode: "https://github.com/ujjwalkirti/Pricing-Component/tree/master",
     actualUrl: "https://confident-leavitt-de982c.netlify.app/",
-    imageUrl:
-      "/pricing component/Capture.png",
+    imageUrl: "/pricing component/Capture.png",
     techStack: ["HTML,CSS & JavaScript", "Tailwind CSS"],
   },
 ];
