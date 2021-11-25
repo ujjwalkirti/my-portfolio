@@ -14,6 +14,10 @@ const tech_collection = [
     imgSrc: "/react-icons.png",
   },
   {
+    name: "Redux",
+    imgSrc: "/redux.png",
+  },
+  {
     name: "Tailwind CSS",
     imgSrc: "/tailwind.png",
   },
@@ -31,20 +35,20 @@ function Page_2() {
   return (
     <div className="bg-white flex flex-col items-center justify-center w-screen h-auto my-32">
       <div className="h-auto w-auto shadow-xl flex flex-col items-center">
-        <h1 className="font-semibold text-4xl p-3 border">My Tech-Stack 🛠️</h1>
-        <div className="flex justify-between mt-3">
+        <h1 className="font-semibold text-4xl p-3">My Tech-Stack 🛠️</h1>
+        <div className="flex justify-between mt-3 px-2">
           {tech_collection.map((object) => {
             return (
               <motion.span
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="m-4"
+                className="m-2"
               >
                 <img
                   src={object.imgSrc}
                   className="h-40 w-40 object-contain shadow-md mb-3 p-3"
                 />
-                <h2 className="text-center font-medium">{object.name}</h2>
+                <h2 className="text-center font-medium mb-3">{object.name}</h2>
               </motion.span>
             );
           })}

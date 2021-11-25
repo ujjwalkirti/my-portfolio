@@ -2,7 +2,6 @@ import { DownCircleFilled } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-
 function Page_1() {
   const [hasNotScrolled, setHasNotScrolled] = useState(true);
   const [subIndex, setSubIndex] = useState(0);
@@ -65,16 +64,17 @@ function Page_1() {
           src="/me.jpg"
           className="h-40 w-40 rounded-full  my-16"
           animate={{ rotate: 360, x: 700 }}
-          transition={{ duration: 4 }}
+          transition={{ duration: 1 }}
         />
       </div>
-      <span className="flex z-40 flex-col lg:flex-row w-screen">
+      <span className=" z-40 text-left w-auto mx-auto lg:flex-row">
         {" "}
-        <h1 className="font-bold text-white sm:text-5xl lg:text-7xl xl:text-9xl w-1/2 text-right pr-4">
+        <h1 className="font-bold text-white sm:text-5xl lg:text-7xl xl:text-9xl pr-4 mb-4">
           I am Ujjwal Kirti
         </h1>
-        <h1 className="font-medium text-7xl w-1/2 bg-white text-left pl-4 flex items-center text-yellow-600">
-          , and I am{" "}
+        <h1 className="font-bold text-white sm:text-3xl lg:text-5xl xl:text-7xl">
+          {" "}
+          and I am{" "}
           {`${beginnerText[index].substring(0, subIndex)}${blink ? "|" : ""}`}
         </h1>
       </span>
