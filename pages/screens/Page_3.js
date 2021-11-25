@@ -101,11 +101,11 @@ function Page_3() {
               </motion.a>
             )}
 
-            <div className="mx-4">
+            <div className="mx-2">
               <p className="text-2xl font-semibold">Made with:</p>
-              <div className="ml-3 flex bg-white bg-opacity-40 w-auto justify-evenly rounded-lg mt-2 p-3">
+              <div className="ml-3 flex bg-white bg-opacity-40 w-auto justify-evenly rounded-lg mt-2 px-1 py-2 ">
                 {tech_collection.map((tech) => {
-                  project.techStack.map((projectTech) => {
+                  return project.techStack.map((projectTech) => {
                     if (tech.name === projectTech) {
                       console.log(tech.imgSrc);
                       return (

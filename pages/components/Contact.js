@@ -9,7 +9,7 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [senderEmail, setSenderEmail] = useState("");
   return (
-    <div className="border w-screen bg-white flex flex-col text-2xl items-center py-6">
+    <div className="border w-screen bg-white flex flex-col text-2xl items-center pt-6 pb-2">
       <p className="text-center  text-3xl font-semibold">
         Feel free to contact me anytime you want!
       </p>
