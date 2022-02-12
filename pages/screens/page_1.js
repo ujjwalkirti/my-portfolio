@@ -1,6 +1,7 @@
 import { DownCircleFilled } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Navbar from "../components/Navbar";
 
 function Page_1() {
   const [hasNotScrolled, setHasNotScrolled] = useState(true);
@@ -58,32 +59,29 @@ function Page_1() {
   }, [blink]);
 
   return (
-    <div className="h-screen bg-gray-600 bg-gradient-to-br from-yellow-300 via-yellow-600 to-red-400 w-full flex  flex-col">
-      <div>
-        <motion.img
-          src="/me.jpg"
-          className="h-40 w-40 rounded-full  my-16"
-          animate={{ rotate: 360, x: 700 }}
-          transition={{ duration: 1 }}
-        />
-      </div>
-      <span className=" z-40 text-left w-auto mx-auto lg:flex-row">
+    <div className="h-auto bg-black w-full flex  flex-col">
+      <Navbar />
+      <div className="flex justify-center">
         {" "}
-        <h1 className="font-bold text-white sm:text-5xl lg:text-7xl xl:text-9xl pr-4 mb-4">
-          I am Ujjwal Kirti
-        </h1>
-        <h1 className="font-bold text-white sm:text-3xl lg:text-5xl xl:text-7xl">
-          {" "}
-          and I am{" "}
-          {`${beginnerText[index].substring(0, subIndex)}${blink ? "|" : ""}`}
-        </h1>
-      </span>
-      {hasNotScrolled && (
-        <div className="absolute transition-all animate-bounce bottom-0 text-white text-2xl font-medium flex justify-center items-center w-full">
-          <DownCircleFilled className="m-3" />
-          Scroll down to know more
+        <img
+          src="/front page images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg"
+          className=" w-2/5 object-contain m-3"
+        />
+        <div className="flex flex-col text-white justify-center">
+          <p className="text-gray-400 text-5xl">Hello, I'm</p>
+          <p className="font-bold text-7xl">Ujjwal Kirti</p>
+          <p className="text-gray-400 text-5xl">Front-end Web Developer</p>
+          <div className="flex flex-col w-2/5 m-2">
+            {" "}
+            <button className="text-black bg-white rounded-full p-2 my-2 cursor-pointer">
+              Hire Me!
+            </button>
+            <button className="border border-white rounded-full p-2 py-auto cursor-pointer">
+              See my resume
+            </button>
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

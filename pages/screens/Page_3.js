@@ -72,7 +72,7 @@ function Page_3() {
       <h1 className="font-semibold text-7xl text-white m-4 text-center w-full">
         My Projects
       </h1>
-      <div className="grid w-full grid-cols-3">
+      <div className="grid w-full md:grid-cols-2 sm:grid-cols-1">
         {projects.map((project) => (
           <div className="text-white m-5 flex flex-col bg-purple-500 bg-opacity-70 shadow-xl rounded-lg mx-4 mx-auto p-4 h-auto">
             <h3 className="text-3xl font-medium">
@@ -103,7 +103,7 @@ function Page_3() {
 
             <div className="mx-2">
               <p className="text-2xl font-semibold">Made with:</p>
-              <div className="ml-3 flex bg-white bg-opacity-40 w-auto justify-evenly rounded-lg mt-2 px-1 py-2 ">
+              <div className="ml-3 bg-white bg-opacity-40 w-auto justify-evenly rounded-lg mt-2 px-1 py-2 grid lg:flex md:grid-cols-2 sm:grid-cols-1 ">
                 {tech_collection.map((tech) => {
                   return project.techStack.map((projectTech) => {
                     if (tech.name === projectTech) {
@@ -111,7 +111,7 @@ function Page_3() {
                       return (
                         <img
                           src={tech.imgSrc}
-                          className="h-16 mr-4 bg-white p-3 shadow-xl rounded-lg"
+                          className="h-16 m-4 bg-white p-3 shadow-xl rounded-lg"
                         />
                       );
                     } else {

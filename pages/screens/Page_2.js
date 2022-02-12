@@ -33,10 +33,10 @@ const tech_collection = [
 
 function Page_2() {
   return (
-    <div className="bg-white flex flex-col items-center justify-center w-screen h-auto my-32">
+    <div className="bg-white flex flex-col items-center justify-center w-screen h-auto my-3">
       <div className="h-auto w-auto shadow-xl flex flex-col items-center">
         <h1 className="font-semibold text-4xl p-3">My Tech-Stack 🛠️</h1>
-        <div className="flex justify-between mt-3 px-2">
+        <div className="m-3 px-2 grid md:grid-cols-4 lg:grid-cols-6 sm:grid-cols-2">
           {tech_collection.map((object) => {
             return (
               <motion.span

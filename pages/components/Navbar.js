@@ -6,9 +6,8 @@ import {
 import { motion } from "framer-motion";
 
 function Navbar() {
-  
   return (
-    <motion.div className={`flex w-screen absolute text-white justify-end`}>
+    <motion.div className={`flex w-screen text-white absolute`}>
       <div className="flex w-2/5 justify-end mx-auto p-2 font-medium  mr-2 text-2xl items-center ">
         {/* <motion.a
           href="/tech"
