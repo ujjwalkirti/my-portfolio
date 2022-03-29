@@ -7,8 +7,12 @@ import { motion } from "framer-motion";
 
 function Navbar() {
   return (
-    <motion.div className={`flex w-screen text-white absolute`}>
-      <div className="flex w-2/5 justify-end mx-auto p-2 font-medium  mr-2 text-2xl items-center ">
+    <motion.div className={`flex w-full lg:px-20 mt-4 text-white absolute`}>
+      <motion.a className="flex">
+        <img className="h-16 rounded-full mr-4" src="logo.png" />
+        <img className="h-16 rounded-full" src="me.jpg" />
+      </motion.a>
+      <div className="flex w-2/5 justify-end mx-auto p-2 font-medium  mr-2 text-2xl ">
         {/* <motion.a
           href="/tech"
           whileHover={{ scale: 1.1 }}
@@ -33,6 +37,7 @@ function Navbar() {
         >
           Contact me!
         </motion.a> */}
+
         <motion.a
           href="https://www.linkedin.com/in/ujjwal-kirti-38936818a/"
           className="ease-in-out duration-200 transition-all cursor-pointer mx-3"

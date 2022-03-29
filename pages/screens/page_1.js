@@ -1,5 +1,4 @@
-import { DownCircleFilled } from "@ant-design/icons";
-import { motion } from "framer-motion";
+import { FaHandPointDown } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 
@@ -9,6 +8,8 @@ function Page_1() {
   const [reverse, setReverse] = useState(false);
   const [blink, setBlink] = useState(true);
   const [index, setIndex] = useState(0);
+
+  const imageBackground = "main-wallpaper.jpg";
 
   const beginnerText = ["a frontend Engineer.", "an UI developer."];
 
@@ -59,29 +60,39 @@ function Page_1() {
   }, [blink]);
 
   return (
-    <div className="h-auto bg-black w-full flex  flex-col">
+    <div
+      className="h-screen bg-black w-full flex  flex-col"
+      style={{
+        backgroundImage: `url(${imageBackground})`,
+        backgroundRepeat: "no-repeat",
+        backgroundOrigin: "content-box",
+        backgroundPosition: "center",
+        backgroundSize: "100% 100%",
+      }}
+    >
       <Navbar />
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center h-screen">
         {" "}
-        <img
-          src="/front page images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg"
-          className=" w-2/5 object-contain m-3"
-        />
-        <div className="flex flex-col text-white justify-center">
-          <p className="text-gray-400 text-5xl">Hello, I'm</p>
+        <div className="flex flex-col text-white justify-center bg-white bg-opacity-40 p-4 rounded-lg">
+          <p className=" text-5xl">Hello, I'm</p>
           <p className="font-bold text-7xl">Ujjwal Kirti</p>
-          <p className="text-gray-400 text-5xl">Front-end Web Developer</p>
-          <div className="flex flex-col w-2/5 m-2">
+          <p className=" text-5xl">Front-end Web Developer</p>
+          <div className="flex justify-around w-full mt-4">
             {" "}
-            <button className="text-black bg-white rounded-full p-2 my-2 cursor-pointer">
+            <button className="text-black bg-white rounded-full p-2 cursor-pointer w-2/5 hover:text-white hover:bg-black font-bold">
               Hire Me!
             </button>
-            <button className="border border-white rounded-full p-2 py-auto cursor-pointer">
+            <button className="border border-white rounded-full w-2/5  p-2 py-auto cursor-pointer font-bold hover:text-black">
               See my resume
             </button>
           </div>
         </div>
       </div>
+
+      <p className="animate-bounce text-white justify-center items-center text-lg flex absolute bottom-0 text-center w-full">
+        <FaHandPointDown />
+        Scroll down to know more!
+      </p>
     </div>
   );
 }

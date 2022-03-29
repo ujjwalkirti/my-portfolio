@@ -28,8 +28,29 @@ const tech_collection = [
     name: "NodeJS",
     imgSrc: "/nodejs.png",
   },
+  {
+    name: "NextJS",
+    imgSrc: "/next.png",
+  },
+  { name: "next-auth", imgSrc: "/next-auth.png" },
 ];
 const projects = [
+  {
+    name: "Helping you through!",
+    emoji: "🤝",
+    byLine:
+      "Built a full-stack web application to help students of my institute get academic resources easily.",
+    githubCode: "https://github.com/ujjwalkirti/help-college",
+    actualUrl: "",
+    imageUrl: "",
+    techStack: [
+      "HTML,CSS & JavaScript",
+      "Tailwind CSS",
+      "NextJS",
+      "Firebase",
+      "next-auth",
+    ],
+  },
   {
     name: "Netflix-clone",
     emoji: "🍿",
