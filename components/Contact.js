@@ -3,7 +3,7 @@ import { useState } from "react";
 import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../../services/Firebase";
+import { db } from "../services/Firebase";
 
 function Contact() {
   const [message, setMessage] = useState("");

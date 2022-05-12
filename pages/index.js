@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Contact from "./components/Contact";
-import Page_1 from "./screens/page_1";
-import Page_2 from "./screens/Page_2";
-import Page_3 from "./screens/Page_3";
+import Contact from "../components/Contact";
+import Page_1 from "../screens/page_1";
+import Page_2 from "../screens/Page_2";
+import Page_3 from "../screens/Page_3";
 
 export default function Home() {
   return (
