@@ -5,10 +5,6 @@ import Modal from "../components/Modal";
 
 function Page_1() {
   const [showModal, setshowModal] = useState(false);
-  const [subIndex, setSubIndex] = useState(0);
-  const [reverse, setReverse] = useState(false);
-  const [blink, setBlink] = useState(true);
-  const [index, setIndex] = useState(0);
 
   const imageBackground = "main-wallpaper.jpg";
 
@@ -24,12 +20,15 @@ function Page_1() {
       }}
     >
       <Navbar />
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex flex-col justify-center w-2/5 h-screen">
         {" "}
         <div className="flex flex-col text-white justify-center bg-white bg-opacity-40 p-4 rounded-lg">
-          <p className=" text-5xl">Hello, I'm</p>
-          <p className="font-bold text-7xl">Ujjwal Kirti</p>
-          <p className=" text-5xl">Front-end Developer</p>
+          <p className=" text-5xl">Hello, I'm Ujjwal Kirti</p>
+        </div>
+        <div className="justify-center bg-white bg-opacity-40 p-4 rounded-lg mt-4">
+          <p className=" text-2xl text-white">
+            I am a Front-end Developer based in India.
+          </p>
           <div className="flex justify-around w-full mt-4">
             {" "}
             <button
@@ -40,12 +39,14 @@ function Page_1() {
             >
               Hire Me!
             </button>
-            <button
+            <a
+              href="https://drive.google.com/file/d/1KB1v-m9_QG0X27MA4Yo-5npyzXsTg2o1/view?usp=sharing"
+              target="_blank"
               onClick={() => {}}
-              className="border border-white rounded-full w-2/5  p-2 py-auto cursor-pointer font-bold hover:text-black"
+              className="border border-white rounded-full w-2/5  p-2 py-auto cursor-pointer text-center font-bold text-black hover:text-white hover:bg-black"
             >
               See my resume
-            </button>
+            </a>
           </div>
         </div>
       </div>
