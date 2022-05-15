@@ -6,7 +6,7 @@ import Modal from "../components/Modal";
 function Page_1() {
   const [showModal, setshowModal] = useState(false);
 
-  const imageBackground = "main-wallpaper.jpg";
+  const imageBackground = "main-wallpaper.webp";
 
   return (
     <div
